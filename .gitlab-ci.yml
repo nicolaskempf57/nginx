@@ -18,5 +18,5 @@ after_script:
 build Nginx:
   stage: build
   script:
-  - docker build --pull --tag $CI_REGISTRY_IMAGE ./nginx
+  - docker build --pull --tag $CI_REGISTRY_IMAGE .
   - docker push $CI_REGISTRY_IMAGE:latest
